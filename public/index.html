@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title> Excel Uploader Angular </title>
+        <link rel="stylesheet" href="app.css" />
+        <script src="libs/jquery.min.js"></script>
+        <script src="libs/angular.min.js"></script>
+        <script src="libs/angular-sanitize.min.js"></script>
+        <script src="libs/quick-ng-repeat.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-app="app">
+        <div ng-controller="MainController">
+            <div class="fileupload">
+                <input type = "file" file-model = "myFile"/>
+                <button ng-click = "uploadFile()">upload me</button>
+            </div>
+        </div>
+    </body>
+</html>
